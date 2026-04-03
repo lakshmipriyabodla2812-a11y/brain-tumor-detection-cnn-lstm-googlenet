@@ -1,16 +1,64 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> c866476 (Clean project without dataset and model)
-# brain-tumor-detection-cnn-lstm-googlenet
-“Hybrid deep learning model combining CNN, LSTM, and GoogLeNet for accurate brain tumor classification from MRI scans.”
+# 🧠 Brain Tumor Detection using Deep Learning
+
+Hybrid deep learning model combining CNN, LSTM, and GoogLeNet for accurate brain tumor classification from MRI scans.
+
+---
+
+## 🚀 Features
+
+* Multi-model approach (CNN, LSTM, GoogLeNet)
+* MRI image preprocessing and classification
+* High accuracy tumor detection
+* Web-based interface using Flask
+
+---
+
+## 🧠 Models Used
+
+* Convolutional Neural Network (CNN)
+* Long Short-Term Memory (LSTM)
+* GoogLeNet Architecture
+
+---
+
 ## 📂 Dataset
 
 Dataset is available here:
 https://drive.google.com/drive/folders/1wvSlxzCKRakkLEIrLlW9z7_wR0QWLA49?usp=drive_link
-<<<<<<< HEAD
-=======
-=======
-# Project-Repository
->>>>>>> 756d576 (Initial commit - brain tumor detection project)
->>>>>>> c866476 (Clean project without dataset and model)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/lakshmipriyabodla2812-a11y/brain-tumor-detection-cnn-lstm-googlenet.git
+cd brain-tumor-detection-cnn-lstm-googlenet
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
+```bash
+python app.py
+```
+
+---
+
+## 📊 Results
+
+* Achieved high accuracy in tumor classification
+* Supports comparison between CNN, LSTM, and GoogLeNet models
+
+---
+
+## 📸 Sample Output
+
+(Add screenshots here for better presentation)
+
+---
+
+## 👨‍💻 Author
+
+Lakshmipriya Bodla
