@@ -55,7 +55,8 @@ python app.py
 
 ## 📸 Sample Output
 
-(Add screenshots here for better presentation)
+![WhatsApp Image 2026-04-02 at 10 08 02](https://github.com/user-attachments/assets/ba4d7690-fb7e-49bb-b4ff-c56a71093dfd)
+
 
 ---
 
