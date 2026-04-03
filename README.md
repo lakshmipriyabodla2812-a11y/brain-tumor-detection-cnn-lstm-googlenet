@@ -55,7 +55,8 @@ python app.py
 
 ## 📸 Sample Output
 
-![WhatsApp Image 2026-04-02 at 10 08 02](https://github.com/user-attachments/assets/ba4d7690-fb7e-49bb-b4ff-c56a71093dfd)
+![WhatsApp Image 2026-04-02 at 10 08 02](https://github.com/user-attachments/assets/787ff780-481b-428e-9837-058e6f7734ef)
+
 
 
 ---
@@ -63,3 +64,5 @@ python app.py
 ## 👨‍💻 Author
 
 Lakshmipriya Bodla
+Siri Chandana
+Tharuni
