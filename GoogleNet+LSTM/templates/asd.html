@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+
+<script type="text/javascript">
+    var curDocParaText = $('.docTextFull').text();
+var docWords = curDocParaText.replace(/\s{2,}/g, ' ').split(" ");
+$( "#parameter" ).autocomplete({
+    source: function(req, responseFn) {
+        var re = $.ui.autocomplete.escapeRegex(req.term);
+        var matcher = new RegExp( "^" + re, "i" );
+        var a = $.grep( docWords, function(item,index){
+            return matcher.test(item);
+        });
+
+
+        var textValue = $("#parameter").val();
+        if (textValue.slice(-1) == " ") {
+            var start = textValue.lastIndexOf(" ", textValue.length-2);
+            var lastWord = textValue.substring(start + 1, textValue.length-1);
+            var pos = docWords.indexOf(lastWord);
+            if (lastWord != " " && docWords.length > pos) {
+                a.push($("#parameter").val() +docWords[pos+1]);
+            }
+        }
+
+        responseFn( a );
+    }
+});
+
+</script>
+<div><b>Demo Sentence:</b></div>
+<div class="docTextFull">"The quick brown fox jumps over the lazy dog"</div>
+<hr/>
+<input type="text" id="parameter">
+</body>
+</html>

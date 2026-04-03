@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About - Brain Tumor</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ✅ Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional custom styling -->
+    <style>
+        body {
+            background-color: #abc9af;
+        }
+
+        .header-box {
+            background: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav-bar {
+            background: #ff880e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav-bar a {
+            color: white;
+            margin: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .section-box {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 300px;
+            margin: 10px;
+        }
+
+        h3 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header-box">
+    <img src="{{ url_for('static', filename='brain.jpg') }}" width="120">
+    <h2 style="color:#273e71;">
+        Brain Tumor Detection using CNN-GoogleNet With LSTM
+    </h2>
+</div>
+
+<!-- NAVBAR -->
+<div class="nav-bar">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('about') }}">About Project</a>
+    <a href="{{ url_for('user') }}">User</a>
+</div>
+
+<!-- ABOUT BRAIN -->
+<div class="section-box text-center">
+    <h3>About Brain Tumor</h3>
+    <img src="{{ url_for('static', filename='images/n.jpg') }}">
+    <p>
+        A brain tumor is a mass of abnormal cells in the brain. It can be benign or malignant.
+    </p>
+</div>
+
+<!-- DEEP LEARNING -->
+<div class="section-box text-center">
+    <h3>About Deep Learning</h3>
+    <img src="{{ url_for('static', filename='images/dpl.jpg') }}">
+    <p>
+        Deep learning is a subset of machine learning using neural networks.
+    </p>
+</div>
+
+<!-- CNN -->
+<div class="section-box text-center">
+    <h3>About CNN</h3>
+    <img src="{{ url_for('static', filename='images/cnn.png') }}">
+    <p>
+        CNN is used for image processing and feature extraction.
+    </p>
+</div>
+
+<!-- LAYERS -->
+<div class="section-box text-center">
+    <h3>About Layers</h3>
+    <img src="{{ url_for('static', filename='images/fully.PNG') }}">
+    <p>
+        Convolution, pooling and fully connected layers are used in CNN.
+    </p>
+</div>
+
+<!-- FOOTER -->
+<div style="background:#273e71; color:white; padding:20px; text-align:center;">
+    <h4>Contact</h4>
+    <p>Brain Tumor Detection Project</p>
+</div>
+
+</body>
+</html>
